@@ -73,7 +73,7 @@ class TestingPrecisionScreen:
                     normalizator_success = self.frame_normalizator.run_image_normalization_with_depth_camera(self.frame.copy(),depth_frame.copy(),depth_camera_intrinsics)
 
                 if not normalizator_success:
-                    print("Normalizator error.")
+                    
                     continue
 
                 face_center = self.frame_normalizator.face_center

@@ -70,7 +70,7 @@ class PipelineGetter:
                     normalizator_success = self.normalizator.run_image_normalization_with_depth_camera(self.frame,depth_frame,depth_camera_intrinsics)
 
                 if not normalizator_success:
-                    print("Normalizator error.")
+                    
                     continue
 
                 # Blink detector

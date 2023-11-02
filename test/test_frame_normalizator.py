@@ -37,7 +37,7 @@ while True:
         normalizator_success = normalizator.run_image_normalization_with_depth_camera(frame.copy(),depth_frame.copy(),depth_camera_intrinsics)
 
     if not normalizator_success:
-        print("Normalizator error.")
+        
         continue
 
     original_image = frame

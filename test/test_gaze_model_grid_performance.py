@@ -60,7 +60,7 @@ while True:
         normalizator_success = frame_normalizator.run_image_normalization_with_depth_camera(frame.copy(),depth_frame.copy(),depth_camera_intrinsics)
 
     if not normalizator_success:
-        print("Normalizator error.")
+        
         continue
 
     face_center = frame_normalizator.face_center
